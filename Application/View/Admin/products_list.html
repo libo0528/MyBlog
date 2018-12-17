@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<style type="text/css">
+		table tr:nth-of-type(even){
+			background-color: #cad3de;
+		}
+ 	</style>
+ </head>
+ <body>
+ 	<table border="1" cellspacing="0" cellpadding="0" align="center" width="980">
+ 		<caption><h2>商品信息表</h2>
+ 			<p><a href="?c=products&a=add">增加商品</a></p></caption>
+		<th>编号</th>
+		<th>商品名称</th>
+		<th>规格</th>
+		<th>价格</th>
+		<th>库存量</th>
+		<th>删除</th>
+		<th>修改</th>
+		{foreach $list as $v}
+			<tr>
+				<td>{$v['proID']}</td>
+				<td>{$v['proname']}</td>
+				<td>{$v['proguige']}</td>
+				<td>{$v['proprice']}</td>
+				<td>{$v['proamount']}</td>
+				<td><a href="?c=products&a=del&proid={$v['proID']}">删除</a></td>
+				<td><a href="?c=products&a=upda&proid={$v['proID']}">修改</a></td>
+			</tr>
+		{/foreach}
+ 	</table>	
+ </body>
+ </html>

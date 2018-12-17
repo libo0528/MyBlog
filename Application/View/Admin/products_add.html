@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <form action="index.php?c=products&a=add" method="post">
+ 	<table border="1" cellspacing="0" cellpadding="0" align="center" width="980">
+ 		<caption><h2>增加商品信息</h2></caption>
+		<!-- <th>编号</th> -->
+		<th>商品名称</th>
+		<th>规格</th>
+		<th>价格</th>
+		<th>库存量</th>
+		<!-- <th>图片</th> -->
+		<!-- <th>网址</th> -->
+
+			<tr>
+				<!-- <td><input type="text" name="proID" value="<?php echo $list['proID']?>"></input></td> -->					
+				<td><input type="text" name="proname" ></input></td>
+			
+				<td><input type="text" name="proguige" ></input></td>	
+				
+				<td><input type="text" name="proprice"></input></td>
+				<td><input type="text" name="proamount"></input></td>
+				<!-- <td><input type="text" name="proimages"></input></td> -->
+				<!-- <td><input type="text" name="proweb"></input></td> -->
+
+		<tr align="center">
+			<td colspan="5">
+				<input type="submit" name="btn" value="增加">
+				<input type="reset">
+			</td>
+			
+		</tr>
+ 	</table>	
+ </form>
+
+ </body>
+ </html>
