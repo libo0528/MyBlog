@@ -1,8 +1,0 @@
-[26-Sep-2018 17:19:08 PRC] PHP Fatal error:  Uncaught Error: Call to undefined function Lib\strtouppe() in D:\wamp\go\Blog\Framework\Lib\Captcha.class.php:40
-Stack trace:
-#0 D:\wamp\go\Blog\Application\Controller\Admin\LoginController.class.php(15): Lib\Captcha->checkCode('qjms')
-#1 D:\wamp\go\Blog\Framework\Core\Framework.class.php(76): Controller\Admin\LoginController->loginAction()
-#2 D:\wamp\go\Blog\Framework\Core\Framework.class.php(11): Core\Framework::initdispatch()
-#3 D:\wamp\go\Blog\index.php(4): Core\Framework::run()
-#4 {main}
-  thrown in D:\wamp\go\Blog\Framework\Lib\Captcha.class.php on line 40
